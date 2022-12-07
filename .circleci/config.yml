@@ -37,10 +37,7 @@ jobs:
       #     args: pytest
       #     pkg-manager: pip
       - run:
-          name: Run tests
-          # This assumes pytest is installed via the install-package step above
-          command: |
-            pip -- version
+          pip -- version
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
